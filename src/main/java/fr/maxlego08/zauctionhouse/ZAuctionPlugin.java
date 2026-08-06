@@ -102,6 +102,20 @@ public class ZAuctionPlugin extends JavaPlugin implements AuctionPlugin {
     @Override
     public void onEnable() {
 
+        var logo = "\r\n";
+        logo += """
+
+               d8888                888   d8b                888    888                                 
+              d88888                888   Y8P                888    888                                 
+             d88P888                888                      888    888                                 
+88888888    d88P 888888  888 .d8888b888888888 .d88b. 88888b. 8888888888 .d88b. 888  888.d8888b  .d88b.  
+   d88P    d88P  888888  888d88P"   888   888d88""88b888 "88b888    888d88""88b888  88888K     d8P  Y8b 
+  d88P    d88P   888888  888888     888   888888  888888  888888    888888  888888  888"Y8888b.88888888 
+ d88P    d8888888888Y88b 888Y88b.   Y88b. 888Y88..88P888  888888    888Y88..88PY88b 888     X88Y8b.     
+88888888d88P     888 "Y88888 "Y8888P "Y888888 "Y88P" 888  888888    888 "Y88P"  "Y88888 88888P' "Y8888 """;
+        this.getLogger().info(logo);
+        this.getLogger().info("Loading zAuctionHouse version " + this.getDescription().getVersion() + "...");
+
         var dataFolder = this.getDataFolder();
         if (!dataFolder.exists()) dataFolder.mkdirs();
 
