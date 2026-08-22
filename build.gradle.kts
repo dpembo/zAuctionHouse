@@ -2,7 +2,7 @@ import org.gradle.kotlin.dsl.invoke
 
 plugins {
     `java-library`
-    id("com.gradleup.shadow") version "9.0.0-beta11"
+    id("com.gradleup.shadow") version "8.3.5"
     id("re.alwyn974.groupez.repository") version "1.0.0"
 }
 
